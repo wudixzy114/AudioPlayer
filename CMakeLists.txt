@@ -17,7 +17,7 @@ set(IMGUI_SOURCES
         ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp
 )
 
-add_executable(AudioPlayer main.cpp
+add_executable(AudioPlayer WIN32 main.cpp
         ${IMGUI_SOURCES})
 
 target_include_directories(AudioPlayer PRIVATE
